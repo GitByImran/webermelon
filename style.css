@@ -1,0 +1,533 @@
+/* font initialization */
+
+@font-face {
+  font-family: "Artico";
+  src: url("/asset/font/Aeonik_TRIAL/aeoniktrial-regular.otf"),
+    url("/asset/font/Aeonik_TRIAL/aeoniktrial-bold.otf"),
+    url("/asset/font/Aeonik_TRIAL/aeoniktrial-light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global css */
+
+* {
+  font-family: "Artico";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9 !important;
+}
+
+/* custom css */
+
+.section-title {
+  font-family: "Artico";
+  margin: 50px 0;
+  font-size: calc(4rem);
+  font-weight: 700;
+}
+
+.section-title span:nth-child(1) {
+  color: #c0c0c0;
+}
+
+.btn-bg-success {
+  background: #00ff80;
+}
+
+/* navbar css */
+
+#navLogo {
+  max-width: 200px;
+  width: 200px;
+}
+
+#navMenu li {
+  color: #101010 !important;
+  font-weight: bold;
+}
+
+/* Hero Section css */
+
+.hero-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-top-left {
+  flex-grow: 1;
+}
+
+.hero-top-left p {
+  font-family: "Artico";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.banner-left-text {
+  font-size: calc(5rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #101010;
+}
+
+.banner-left-text:nth-child(1),
+.banner-left-text:nth-child(2) {
+  color: #c0c0c0;
+}
+
+.banner-right p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 300px;
+  display: none;
+}
+
+#hero-button {
+  height: 100px;
+  width: 100px;
+  background: #101010 !important;
+  color: #fff;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.hero-bottom-left {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* success stories css */
+
+.card-hover {
+  position: relative;
+  overflow: hidden;
+}
+.card-hover img {
+  transition: transform 0.3s ease;
+}
+.card-hover:hover img {
+  transform: scale(1.1);
+}
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.card-hover:hover .hover-overlay {
+  opacity: 1;
+}
+.full-view-btn {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.hover-overlay:hover .full-view-btn {
+  display: block;
+}
+
+.see-all-btn {
+  background: none;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 2px solid #101010 !important;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* team css */
+
+.person-image {
+  max-height: 310px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+/* gellery css */
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  display: block;
+  border-radius: 12px;
+}
+
+.flip-image {
+  transform: rotateY(180deg);
+}
+
+/* testimonial css */
+
+.feedback {
+  font-family: "Artico";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.quote-symbol {
+  height: 100px;
+  font-size: 150px;
+}
+
+/* footer css*/
+
+.connect-section {
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+.connect-info {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.connect-info p {
+  font-size: 18px;
+}
+
+.connect-info a {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  position: relative;
+  z-index: 99;
+  font-size: calc(4rem);
+  color: #101010;
+  text-decoration-line: none;
+}
+
+.connect-info a::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 15px;
+  width: 100%;
+  height: 2px;
+  background-color: #101010;
+  transform: translateX(-50%);
+}
+
+.connect-info img {
+  width: auto;
+  height: 70px;
+  display: inline-block;
+  transform: rotate(36deg);
+  margin-left: 10px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400 !important;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-info p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  font-size: calc(2rem);
+  color: #c0c0c0;
+  margin-bottom: 20px;
+}
+
+/* Accordion styles */
+
+.hero-accordion-button {
+  background: transparent !important;
+}
+
+.hero-accordion-body {
+  font-family: "Artico";
+  font-size: 16px;
+  font-weight: 400;
+  list-style: 20px !important;
+  border-top: 1px solid #dedede;
+}
+
+.hero-accordion-item.active {
+  background-color: #101010 !important;
+  color: #ffffff !important;
+}
+
+.hero-accordion-item.active .hero-accordion-button {
+  color: #ffffff !important;
+}
+
+.service-accordion-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #000;
+  box-shadow: none;
+}
+
+.accordion-item {
+  padding: 10px;
+  border: 1px solid #dedede;
+}
+
+.accordion-item.active {
+  background-color: #f9f9f9;
+  border: 1px solid #dedede;
+}
+
+.accordion-item.active .service-accordion-button {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+.accordion-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.accordion-button img {
+  height: 40px;
+}
+
+.accordion-button.bg-dark {
+  background-color: #dedede;
+  color: #fff;
+}
+
+.service-accordion-body {
+  border-top: 1px solid #808583;
+  display: flex;
+  align-items: center;
+}
+
+.service-accordion-body .row {
+  display: flex;
+  align-items: center;
+}
+
+.service-accordion-body-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.service-accordion-body p {
+  font-family: "Artico";
+  font-size: 18px;
+  font-weight: 400;
+  list-style: 24px !important;
+}
+
+.service-accordion-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-accordion-body ul li {
+  list-style: none;
+  line-height: 16px;
+}
+.service-accordion-body ul li img {
+  height: 30px;
+}
+.service-accordion-body ul li span {
+  font-family: "Artico";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.service-accordion-button {
+  font-family: "Artico";
+  font-size: 32px;
+  color: #101010 !important;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@media (max-width: 768px) {
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .hero-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .hero-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin: 30px 0;
+  }
+
+  .banner-left-text {
+    font-size: 3rem;
+  }
+
+  .banner-right p {
+    display: block;
+    max-width: none;
+  }
+
+  .hero-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-bottom-left {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .footer-menu {
+    font-size: 16px;
+  }
+  .contact-info p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .contact-info a {
+    font-size: 20px;
+  }
+
+  .contact-info button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-left-text {
+    font-size: 2.5rem;
+  }
+
+  .hero-bottom-left {
+    max-height: 300px;
+  }
+
+  .footer-menu {
+    font-size: 14px;
+  }
+  .contact-info {
+    display: block;
+  }
+  .contact-info a {
+    font-size: 18px;
+  }
+
+  .contact-info button {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}

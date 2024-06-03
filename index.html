@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>webermelon-task2</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg my-2">
+      <div class="container">
+        <img src="/asset/image/logo.png" alt="logo.png" id="navLogo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navMenu">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          </ul>
+          <button type="button" class="btn btn-bg-success">Contact us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section my-5">
+      <div class="container">
+        <div class="hero-top">
+          <div class="hero-top-right d-flex flex-column lh-1">
+            <span class="banner-left-text">Creativity.</span>
+            <span class="banner-left-text">Collaboration.</span>
+            <span class="banner-left-text">Development.</span>
+          </div>
+          <div class="hero-top-left">
+            <p class="mb-4">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface without relying.
+            </p>
+            <button id="hero-button">
+              <span>View All Services</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+        <div class="hero-bottom mt-5">
+          <div class="hero-bottom-left">
+            <img src="/asset/image/bg-image-1.png" alt="" class="hero-image" />
+          </div>
+          <div class="hero-bottom-right">
+            <div
+              class="accordion d-flex flex-column gap-4"
+              id="accordionExample"
+            >
+              <div
+                class="accordion-item hero-accordion-item rounded-4 overflow-hidden"
+                id="accordionItem1"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button hero-accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <span class="fs-1 fw-bold">10</span>
+                    <span class="fs-4">Years of Experience</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body hero-accordion-body">
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used development.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item hero-accordion-item rounded-4 overflow-hidden"
+                id="accordionItem2"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hero-accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span class="fs-1 fw-bold">246</span>
+                    <span class="fs-4">Project Completed</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body hero-accordion-body">
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used development.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item hero-accordion-item rounded-4 overflow-hidden"
+                id="accordionItem3"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hero-accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span class="fs-1 fw-bold">116</span>
+                    <span class="fs-4">Happy Customers</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body hero-accordion-body">
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used development.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section -->
+
+    <section style="background: #ffffff; padding: 30px 0">
+      <div class="container">
+        <h2 class="section-title text-capitalize">
+          <span class="">Our</span> <br /><span>services</span>
+        </h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button service-accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="/asset/image/coding.png" alt="" /> Custom Website
+                Design and Development
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="container accordion-body service-accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="lh-base">
+                      The official first appearance of your company is its
+                      website. Therefore, we always uphold higher standards of
+                      quality to ensure that your website satisfies your
+                      customers and generates more revenue.
+                    </p>
+                    <ul>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 bo">
+                    <img
+                      src="/asset/image/bg-image-2.png"
+                      alt=""
+                      class="service-accordion-body-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item services-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed service-accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img src="/asset/image/coding.png" alt="" /> Custom Software
+                Development
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="container accordion-body service-accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="lh-base">
+                      The official first appearance of your company is its
+                      website. Therefore, we always uphold higher standards of
+                      quality to ensure that your website satisfies your
+                      customers and generates more revenue.
+                    </p>
+                    <ul>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 bo">
+                    <img
+                      src="/asset/image/bg-image-2.png"
+                      alt=""
+                      class="service-accordion-body-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item services-accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed service-accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img src="/asset/image/coding.png" alt="" /> Mobile App
+                Development
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="container accordion-body service-accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="lh-base">
+                      The official first appearance of your company is its
+                      website. Therefore, we always uphold higher standards of
+                      quality to ensure that your website satisfies your
+                      customers and generates more revenue.
+                    </p>
+                    <ul>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                      <li>
+                        <img src="/asset/image/verified.png" alt="" />
+                        <span
+                          >In publishing and graphic design, Lorem ipsum is a
+                          placeholder text commonly used to.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/asset/image/bg-image-2.png"
+                      alt=""
+                      class="service-accordion-body-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- success stories -->
+
+    <section>
+      <div class="container">
+        <h2 class="section-title text-capitalize">
+          <span class="">Our</span> <br /><span>success stories</span>
+        </h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-hover">
+                <img
+                  src="/asset/image/success-image-1.png"
+                  class="card-img-top"
+                  alt="success story 1"
+                />
+                <div class="hover-overlay">
+                  <button class="full-view-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-right"></i
+                    ><span>Full View</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title capitalize text-body-secondary">
+                  Web Development
+                </h6>
+                <p class="card-text capitalize fs-2 fw-bold">
+                  Coople – A Digital Staffing Agency Web Development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-hover">
+                <img
+                  src="/asset/image/success-image-1.png"
+                  class="card-img-top"
+                  alt="success story 1"
+                />
+                <div class="hover-overlay">
+                  <button class="full-view-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-right"></i
+                    ><span>Full View</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title capitalize text-body-secondary">
+                  Web Development
+                </h6>
+                <p class="card-text capitalize fs-2 fw-bold">
+                  Coople – A Digital Staffing Agency Web Development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-hover">
+                <img
+                  src="/asset/image/success-image-1.png"
+                  class="card-img-top"
+                  alt="success story 1"
+                />
+                <div class="hover-overlay">
+                  <button class="full-view-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-right"></i
+                    ><span>Full View</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title capitalize text-body-secondary">
+                  Web Development
+                </h6>
+                <p class="card-text capitalize fs-2 fw-bold">
+                  Coople – A Digital Staffing Agency Web Development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-hover">
+                <img
+                  src="/asset/image/success-image-1.png"
+                  class="card-img-top"
+                  alt="success story 1"
+                />
+                <div class="hover-overlay">
+                  <button class="full-view-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-right"></i
+                    ><span>Full View</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title capitalize text-body-secondary">
+                  Web Development
+                </h6>
+                <p class="card-text capitalize fs-2 fw-bold">
+                  Coople – A Digital Staffing Agency Web Development
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="see-all-btn">See All</button>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- team section -->
+
+    <section>
+      <div class="container">
+        <h2 class="section-title text-capitalize lh-1">
+          <span class="">Our</span> <br /><span>success stories</span>
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="/asset/image/person-image.png"
+                alt="person image 1"
+                class="person-image"
+              />
+
+              <div class="card-body d-flex flex-column gap-1 px-0">
+                <p class="card-text capitalize fs-3 fw-bold p-0 m-0">
+                  Gazi Rahad
+                </p>
+                <h6 class="card-title capitalize text-body-secondary p-0 m-0">
+                  Frontend Developer
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- gallery -->
+    <section style="background: #ffffff; padding: 30px 0">
+      <div class="container">
+        <h2 class="section-title text-capitalize lh-1">
+          <span class="">Our</span> <br /><span>production house</span>
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+            <img
+              src="/asset/image/pro-image-1.png"
+              alt="person image 1"
+              class="gallery-image"
+            />
+          </div>
+          <div class="col-12 col-md-6 mb-4">
+            <img
+              src="/asset/image/pro-image-2.png"
+              alt="person image 2"
+              class="gallery-image"
+            />
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img
+              src="/asset/image/pro-image-3.png"
+              alt="person image 3"
+              class="gallery-image flip-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+    <section style="background: #ffffff; padding: 30px 0">
+      <div class="container">
+        <h2 class="section-title text-capitalize lh-1">
+          <span class="">result</span> <br /><span>we made</span>
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-5 mb-4">
+            <img
+              src="/asset/image/testimonial-side-image.png"
+              alt="testimonial image"
+              class="testimonial-image rounded-4"
+              style="width: 100%"
+            />
+          </div>
+          <div class="col-12 col-md-7 mb-4 testimonial-content">
+            <div
+              class="d-flex flex-column justify-content-center align-items-start"
+            >
+              <p class="quote-symbol">"</p>
+              <div class="feedback fs-3 mb-3">
+                This is the feedback text from the client. It highlights their
+                experience and the positive impact of our services.
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <div>
+                  <p class="testimonial-author fw-bolder fs-5 m-0 p-0">
+                    Eric Zuley
+                  </p>
+                  <p class="testimonial-position fs-6 p-0 m-0">
+                    Chairman, CEO eZWay Network
+                  </p>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn me-2 rounded-circle"
+                    style="background: #d6dce1"
+                  >
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn me-2 rounded-circle"
+                    style="background: #d6dce1"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 mt-5"
+              >
+                <div class="text-center">
+                  <h2 class="fw-bold fs-1">2 M</h2>
+                  <p>Total User</p>
+                </div>
+                <div class="text-center">
+                  <h2 class="fw-bold fs-1">120 M</h2>
+                  <p>Total Revenue</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer style="background: #222222; border-radius: 20px 20px 0 0">
+      <div class="connect-section" style="background: #f6f6f6">
+        <div class="container connect-info">
+          <p class="m-0">Have a Cool Project idea?</p>
+          <div class="d-flex align-items-center flex-wrap">
+            <a class="m-0" href="">Start by Saying Hi </a>
+            <img src="/asset/image/hello-icon.png" alt="" class="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-section container">
+        <div class="footer-content">
+          <ul class="footer-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Success Stories</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+
+          <ul class="footer-menu">
+            <li><a href="">Web Development</a></li>
+            <li><a href="">Mobile App</a></li>
+            <li><a href="">Software Development</a></li>
+          </ul>
+
+          <ul class="footer-menu">
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Clutch</a></li>
+            <li><a href="">Trustpilot</a></li>
+          </ul>
+
+          <div class="contact-info">
+            <p class="m-0">Email</p>
+            <a href="">hello@webermelon.com</a>
+            <button type="button" class="btn btn-bg-success">Contact us</button>
+          </div>
+        </div>
+        <hr class="container border border-1" />
+        <center class="container text-light fs-6">
+          &copy; 2023 Webermelon, All rights reserved.
+        </center>
+      </div>
+    </footer>
+
+    <!--  -->
+
+    <!-- Scripts -->
+    <script src="/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
